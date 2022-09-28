@@ -13,6 +13,7 @@ Java Runtime Environment (JRE) バージョン 11 以降 (Zulu OpenJDK バージ
 - [VisualStudioCodeのインストール](#2-visualstudiocodeのインストール)
 
 
+TODO：ここは後で整理
 - セールスフォースとの連携
 Salesforce CLI をインストールする
 Visual Studio Code プラグイン(Salesforce Extension Pack)をインストールする
@@ -29,7 +30,6 @@ Visual Studio Code プラグイン(Salesforce Extension Pack)をインストー�
 - リリースもやり方わかるといいな。
 
 
-
 ---
 
 ### 1. OpenJDKのインストール
@@ -42,6 +42,7 @@ Visual Studio Code プラグイン(Salesforce Extension Pack)をインストー�
     Windowsを例として記載します。
 
     Windowsのx86 64-bitのmsiファイルをダウンロードします。
+    
     ![image](https://user-images.githubusercontent.com/64938514/192466261-ca51a1ca-5944-48fb-9006-b19a2aab5325.png)
 
     例）ダウンロードファイル
@@ -88,6 +89,7 @@ Visual Studio Code プラグイン(Salesforce Extension Pack)をインストー�
     [salesforce 公式ページ](https://developer.salesforce.com/ja/tools/sfdxcli) からインストーラを取得します。ページに遷移すると、使用 OS に合わせたダウンロードリンクが表示されています。
 
     PCに適したダウンロードボタンをクリックしてインストーラをダウンロードします。
+    
     ![image](https://user-images.githubusercontent.com/64938514/192711908-3df3dd44-94f3-45e3-ba72-b193dfa9e604.png)
 
     「Download for Windows 64」の場合、インストーラ名は「sfdx-windows-amd64.exe」
@@ -97,7 +99,13 @@ Visual Studio Code プラグイン(Salesforce Extension Pack)をインストー�
     特にこだわりが無ければ、何も変更せずに進めてインストールを完了させます。
 
     インストールが完了したら、Salesforce CLI のインストールおよびプラグインバージョンを確認します。
-    windows であればコマンドプロンプトを起動し、次のコマンドを実行してバージョンを確認します。
+    windowsであればコマンドプロンプトを起動し、次のコマンドを実行してバージョンを確認します。
+    
+    > **Note**
+    >
+    > コマンドプロンプトの起動ショートカットは「Windows(のマーク)キー + R」で、「ファイル名を指定して実行」というダイアログが表示する。
+    >
+    > 「cmd」と入力し、Enterを押してください。
 
     ```
     sfdx --version
@@ -110,6 +118,7 @@ Visual Studio Code プラグイン(Salesforce Extension Pack)をインストー�
     検索テキストボックスに「Salesforce Extension Pack」と入力し検索して選択します。
 
     「インストール」ボタンをクリックします。
+    
     ![image](https://user-images.githubusercontent.com/64938514/192718985-32f20cc8-2b46-4eb8-af6f-ec85f0340364.png)
 
 1. 開発環境を構築する
