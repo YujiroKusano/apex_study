@@ -39,6 +39,7 @@
     特に「Lightning アプリケーションビルダー」で複雑なカスタマイズしている場合に有用とのこと。
 
 > **Warning**
+> 
 > ページレイアウトに配置されていない項目（フローが動作して設定される値など）も変更できてしまうため、意図しない動作となる可能性がある。
 
 #### 具体的な機能
@@ -46,17 +47,25 @@
 有効化すると、画面右端にクリックで展開するメニューバーが現れる。
 
     オブジェクトを選択すると、そこから新規レコード作成もできる。
+    オブジェクトを選んで「Show all data」ボタンをクリックする。
+    
 ![image](https://user-images.githubusercontent.com/64938514/192676604-f3b68fa6-5289-408c-995d-663125425bf6.png)
 
-- オブジェクトを選んで「Show all data」ボタン
+- 「New」ボタンからレコード作成できる
+
 ![image](https://user-images.githubusercontent.com/64938514/192676689-a65e18c0-6dc7-4e6a-8fc2-bdab28c51bdc.png)
 
-- 詳細ページから本機能で「Show all data」ボタン
+- 詳細ページから、本機能で「Show all data」ボタン
 　するとそのレコードの値が確認でき、レコード編集もできる
+
 ![image](https://user-images.githubusercontent.com/64938514/192684716-340c0f46-2479-4ee1-8146-001fc044ed26.png)
+
 - 「Edit」ボタンからレコード編集できる
+
 ![image](https://user-images.githubusercontent.com/64938514/192685920-71cadf29-cda2-4fe2-9574-7db49ca10db0.png)
 
 > **Note**
+> 
 > データのエクスポート／インポートもできる。（試してない）
+> 
 > オブジェクトの設定画面まで遷移や、開発者コンソールを開いてなどの手間が不要となり効率アップになるかも。
