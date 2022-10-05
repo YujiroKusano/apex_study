@@ -124,9 +124,73 @@ Visual Studio Code プラグイン(Salesforce Extension Pack)をインストー�
 1. 開発環境を構築する
     1. ローカルPCにて作業用プロジェクトを作成する
 
+        コマンドパレットを開き（ショートカットキー：[ctrl]キー + [shift]キー + [P]キー）、
+        
+        テキストボックスに「SFDX: Create Project with Manifest」と入力し、選択します。
+
+        ![image](https://user-images.githubusercontent.com/64938514/193994823-76b7656b-e8dc-43a6-ba6d-89be4c6de8f0.png)
+
+        - 選択後、作業用プロジェクトの名前を入力します。（適宜、入力してください）
+        - 名前を入力後、プロジェクトを作成するフォルダ選択ダイアログが表示されます。（適宜、管理する場所を選択してください）
+
+
     1. salesforce組織の認証を行う
+
+        developer 組織に接続するので不要ですが、
+        sandbox組織に接続する場合は sfdx-project.json を開いてログインURL の値を更新します。
+
+        > **Note**
+        >
+        > sfdx-project.json を変更する場合
+        > 
+        > sandbox なら「https://test.salesforce.com」に変更します。
+        > 
+        > ![image](https://user-images.githubusercontent.com/64938514/193996643-d47d5cb7-99d0-4249-9c83-9264ffba24f2.png)
+        >
+
+        salesforce 組織の認証を行います。
+        
+        コマンドパレットを開き、テキストボックスに「Aut「SFDX: Authorize an Org」と入力し、選択します。
+        
+        ※ 先に作業用プロジェクトを用意しないと、選択肢は出てきません。
+
+        ![image](https://user-images.githubusercontent.com/64938514/193998230-43430a2d-2821-471e-8c08-159b18ab5a9c.png)
+
+        プロジェクトのデフォルトを選択し、Enterを押してください。
+
+        ![image](https://user-images.githubusercontent.com/64938514/193999975-3337229a-b661-45ba-a53c-81d88e6047c6.png)
+
+        次に、接続する組織をローカルPC で管理するための alias 名（管理上の別名）を入力します。
+
+        特にこだわりがなければ、何も入力せずにEnterでも進めます。
+
+        ![image](https://user-images.githubusercontent.com/64938514/194000198-cd598fd9-250c-46fc-b9e6-c9b91b1401a5.png)
+
+        salesforceの認証をするため、
+        WebブラウザにてログインURL の画面に遷移します。
+        
+        ユーザ名とパスワードを入力して認証を行います。
+        
+        認証に成功すると Visual Studio Code のコンソールに下記メッセージが表示されます。
+
+        ![image](https://user-images.githubusercontent.com/64938514/194000957-5d7f56e6-1552-4efb-b29a-1eb605623281.png)
     
     1. 接続先の組織からソースを取得する(retrive)
+
+        package.xml に定義したソースを全て取得する方法と特定のソースのみの２つを紹介します。
+
+        - package.xml に定義したソースを全て取得する場合
+
+            Visual Studio Code の Explorer 上にある「package.xml」を右クリックし、コンテキストメニューを表示します。
+
+            コンテキストメニューから「SFDX: Retrieve Source in Manifest from Org」を選択します。
+
+            ![image](https://user-images.githubusercontent.com/64938514/194017222-69169e67-fc62-46bd-bd36-df568b2be6ea.png)
+
+        - 特定のソースのみを取得する場合
+
+            特定のソースを右クリックする以外は、
+            「package.xml に定義したソースを全て取得する場合」と同様の手順です。
     
     1. ソースを編集する
     
