@@ -4,23 +4,22 @@
 - テストクラスのカバレッジ確認手順
 - リリース手順
 
-### 1. OpenJDK version 11 のダウンロードおよびインストール
-
-- ```<Windows>```
-Java Runtime Environment (JRE) バージョン 11 以降 (Zulu OpenJDK バージョン 11 以降など)
-- ```<macOS>```
-Java Runtime Environment (JRE) バージョン 11 以降 (Zulu OpenJDK バージョン 11 以降など) 
+> **Note** 
+> 
+> OpenJDK version 11 のダウンロードおよびインストール
+> - ```<Windows>```
+> Java Runtime Environment (JRE) バージョン 11 以降 (Zulu OpenJDK バージョン 11 以降など)
+> - ```<macOS>```
+> Java Runtime Environment (JRE) バージョン 11 以降 (Zulu OpenJDK バージョン 11 以降など) 
 
 ## 目次
-- [OpenJDKのインストール](#1-openjdkのインストール)（インストール済みであれば飛ばす）
-- [VisualStudioCodeのインストール](#2-visualstudiocodeのインストール)
-- [VisualStudioCodeでSalesforce開発](#3-visualstudiocodeでsalesforce開発)
-
+1. [OpenJDKのインストール](#1-openjdkのインストール)（インストール済みであれば飛ばす）
+1. [VisualStudioCodeのインストール](#2-visualstudiocodeのインストール)
+1. [VisualStudioCodeでSalesforce開発](#3-visualstudiocodeでsalesforce開発)
 
 > **Note**
 > 
->
->SalesforceにApexをデプロイする方法が分かり、Apexについて学習したい場合[こちら](https://github.com/YujiroKusano/apex_study/tree/main/apex#%E3%83%88%E3%83%AA%E3%82%AC)を参照。
+>SalesforceにApexをデプロイする方法が分かり、Apexについて学習したい場合[こちら](https://github.com/YujiroKusano/apex_study/tree/main/apex#apex%E5%85%A5%E9%96%80)を参照。
 
 ---
 
@@ -186,27 +185,28 @@ Java Runtime Environment (JRE) バージョン 11 以降 (Zulu OpenJDK バージ
     
     1. ソースを編集する
 
-        今回は例として、Account（取引先）の作成後に特定の項目に値を設定するApexトリガーを作成。
+        今回は例として、Account（取引先）の作成後に特定の項目に値を設定するApexトリガーを作成します。
 
-        「***\force-app\main\default\triggers」で右クリックし、「Apexトリガーを作成」をクリック。
+        「***\force-app\main\default\triggers」で右クリックし、「Apexトリガーを作成」をクリックします。
 
         ![image](https://user-images.githubusercontent.com/64938514/207199770-e686c939-0be7-4b9d-8404-a6db2f389a27.png)
 
-        作成するファイル名を入力し、「Enterキー」を押下。
+        作成するファイル名を入力し、「Enter」キーを押下します。
         （例として「HelloWorldTrigger」でファイル作成）
 
         ![image](https://user-images.githubusercontent.com/64938514/207200459-be8fb2f2-c7f3-46ba-a757-7b887ce3d555.png)
 
-        ディレクトリを指定。
+        ディレクトリを指定します。
         （例として「triggers」フォルダを選択）
 
         ![image](https://user-images.githubusercontent.com/64938514/207200937-718e4179-428a-453b-a11b-b3271eaadc25.png)
 
-        ファイルが作成されるため、ここにコードを書く。
+        ファイルが作成されるため、ここにコードを書きます。
 
         ![image](https://user-images.githubusercontent.com/64938514/207201319-5921b1c0-c07d-4369-ada7-c2c02e117b85.png)
         
-        取引先作成後に「説明」項目に値を設定。
+        取引先作成後に「説明」項目に値を設定するコードは以下です。
+        試すのであればコピペしてください。
 
         ```
         trigger HelloWorldTrigger on Account (before insert, after insert) {
@@ -226,31 +226,32 @@ Java Runtime Environment (JRE) バージョン 11 以降 (Zulu OpenJDK バージ
 
     1. ソースをsalesforceに格納する(deploy)
 
-        変更したファイルまたはディレクトリで右クリックし、「組織をソースへデプロイ」をクリック。
+        変更したファイルまたはディレクトリで右クリックし、「組織をソースへデプロイ」をクリックします。
         （例として「triggers」フォルダを選択）
 
         ![image](https://user-images.githubusercontent.com/64938514/207209293-30e73541-491e-4322-af82-fc6349b17d75.png)
 
-        デプロイが実行された情報が「出力」で見れる。
+        デプロイが実行された情報が「出力」で見れます。
 
         ![image](https://user-images.githubusercontent.com/64938514/207209956-6a9caeaa-895a-43d4-938a-afe9477180c5.png)
 
      1. salesforce上で動作確認
 
-        まずはデプロイされていることを確認。
-        デプロイしたsalesforceにログインし、設定の検索から「Apex」と入力して「Apexトリガー」をクリック。
+        まずはデプロイされていることを確認します。
+        デプロイしたsalesforceにログインし、設定の検索から「Apex」と入力して「Apexトリガー」をクリックします。
 
         ![image](https://user-images.githubusercontent.com/64938514/207240029-0422d6d1-2e41-440e-af22-9bc525be5e68.png)
 
-        デプロイした名前があることを確認。
+        デプロイした名前があることを確認します。
 
         ![image](https://user-images.githubusercontent.com/64938514/207240156-13e39599-8bad-4e48-a78f-2a33dbd4501f.png)
 
-        今回のトリガーは、取引先作成後に「説明」項目に値を設定するため、取引先で新規レコードを作成。
-        取引先名のみ入力し、「保存」をクリック。
+        今回のトリガーは、取引先作成後に「説明」項目に値を設定するため、取引先で新規レコードを作成します。
+        取引先名のみ入力し、「保存」をクリックします。
 
         ![image](https://user-images.githubusercontent.com/64938514/207240619-473417ce-f4e5-4d05-89af-20a3c0f3d575.png)
 
-        作成した取引先レコードの詳細タブの「説明」項目を確認すると、入力していない値が設定されていることが確認できる。
+        作成した取引先レコードの詳細タブの「説明」項目を確認すると、入力していない値が設定されていることが確認できます。
 
         ![image](https://user-images.githubusercontent.com/64938514/207240824-6fc42727-b3f2-411e-8f1b-f85c52590d9b.png)
+
