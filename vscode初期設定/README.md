@@ -255,3 +255,21 @@
 
         ![image](https://user-images.githubusercontent.com/64938514/207240824-6fc42727-b3f2-411e-8f1b-f85c52590d9b.png)
 
+    1. おまけ：VscodeにJavaの設定をする
+
+        Testクラスを実行するために必要となるとか必要にならないとか。
+
+        Javaのバージョンは今後変動する可能性があるため、参考URLをもとに実施してください。
+        https://developer.salesforce.com/tools/vscode/ja/vscode-desktop/java-setup
+
+
+        例として、ZuluのJava11を設定する手順を記載します。
+        「ファイル」-「ユーザ設定」-「設定」をクリックします。
+
+        ![image](https://user-images.githubusercontent.com/64938514/207516064-fe9613e1-19e5-47d4-a209-b4491cfbfb03.png)
+
+        設定の検索欄に「java」と入力し、「Salesforcedx-vscode-apex › Java: Home」にJavaのインストール場所ディレクトリを設定してください。
+        （例としてJava11をデフォルトでインストールした場合のパス「C:\\Program Files\\Zulu\\zulu-11」を記載しています。）
+
+        ![image](https://user-images.githubusercontent.com/64938514/207516921-ff580a4a-d560-4e8f-b49e-04e5f7f2c39e.png)
+
