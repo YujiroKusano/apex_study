@@ -207,7 +207,7 @@ public class SampleClass {
 	public void execute() {
 		Account act = [SELECT colomnA__c, colomnB__c FROM Account Limit 1];
 		act.colomnB__c = act.colomnA__c == 'Active' ? false : true;
-		Database.insert(act, false);
+		Database.update(act, false);
 	}
 }
 ```
