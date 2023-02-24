@@ -230,7 +230,7 @@ public class SampleTestClass {
 	 * 期待値：　colomnB__cの値がfalse
 	 */
 	@isTest
-	public void executeClmAIsActiveTest() {
+	public static void executeClmAIsActiveTest() {
 		// テスト用のデータを作成
 		Account newAccount = new Account(colomnA__c = 'Active');
 		insert newAccount;
@@ -247,7 +247,7 @@ public class SampleTestClass {
 	 * 期待値：　colomnB__cの値がtrue
 	 */
 	@isTest
-	public void executeClmAIsDeletedTest() {
+	public static void executeClmAIsDeletedTest() {
 		// テスト用のデータを作成
 		Account newAccount = new Account(colomnA__c = 'Deleted');
 		insert newAccount;
