@@ -1,4 +1,4 @@
-# LESSON8
+# LESSON7
 ## リストについて覚えよう
 ```apex
 // List<データ型> 変数名　= new List<データ型>();
