@@ -20,7 +20,7 @@
 1. 実行匿名ウィンドウ上に以下を入力し、実行
     1. 何が表示されるか考えてみよう
     ```apex
-    Boolean result = true;
+    Integer result = true;
     System.debug('Q01. ↓↓↓↓');
     result = 12 + 12;
     System.debug(result);
