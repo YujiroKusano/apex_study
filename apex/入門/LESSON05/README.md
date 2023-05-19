@@ -20,25 +20,24 @@
 1. 実行匿名ウィンドウ上に以下を入力し、実行
     1. 何が表示されるか考えてみよう
     ```apex
-    Integer result = true;
     System.debug('Q01. ↓↓↓↓');
-    result = 12 + 12;
+    Integer result = 12 + 12;
     System.debug(result);
     
     System.debug('Q02. ↓↓↓↓');
-    result = 12 + '12';
+    String result = 12 + '12';
     System.debug(result);
     
     System.debug('Q03. ↓↓↓↓');
-    result = 12 + 12 + '12';
+    String result = 12 + 12 + '12';
     System.debug(result);
     
     System.debug('Q04. ↓↓↓↓');
-    result = 12 + (12 + '12');
+    String result = 12 + (12 + '12');
     System.debug(result);
     
     System.debug('Q05. ↓↓↓↓');
-    result = 12 + 12 * 2;
+    Integer result = 12 + 12 * 2;
     System.debug(result);
     
     ```
