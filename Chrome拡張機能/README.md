@@ -24,14 +24,6 @@
 <img width="669" alt="スクリーンショット 2022-08-25 17 17 35" src="https://user-images.githubusercontent.com/42022387/186615584-bfa9f926-0830-48db-9294-c7b39337e6ac.png">
 
 
-
-## Force.com LOGINS
-### [Force.com LOGINS](https://chrome.google.com/webstore/detail/forcecom-logins/ldjbglicecgnpkpdhpbogkednmmbebec?hl=ja)
-- 環境に瞬時にログインできるツール
-#### 具体的な機能
-- ログイン情報を複数登録しておくことができワンクリックでログインできるようにしてくれる
-![image](https://user-images.githubusercontent.com/42022387/145343181-78e09101-81f4-4a57-910e-75585f6e8260.png)
-
 ## Salesforce inspector
 ### [Salesforce inspector](https://chrome.google.com/webstore/detail/salesforce-inspector/aodjmnfhjibkcdimpodiifdjnnncaafh?hl=ja)
 - オブジェクトの詳細一覧、レコードの追加／編集（ページレイアウトに配置していない項目の値設定もできる）、確認ができる。
