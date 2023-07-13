@@ -2,7 +2,6 @@
 ## 目次
 - [Salesforce DevTools](#Salesforce-DevTools)
 - [ORGanizer for Salesforce](#ORGanizer-for-Salesforce)
-- [Force.com LOGINS](#forcecom-logins)
 - [Salesforce inspector](#salesforce-inspector)
 ## Salesforce DevTools
 ### [Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf?hl=ja)
