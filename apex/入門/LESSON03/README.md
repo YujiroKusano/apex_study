@@ -22,7 +22,7 @@ Integer、Double、Long、Date、Datetime、String、ID、または Booleanな�
     ```apex
     Integer test1 = 10;
     Long test2 = test1;
-    System.debug(test);
+    System.debug(test2);
     // 結果 ↓↓↓↓
     // 10
     ```
@@ -30,7 +30,7 @@ Integer、Double、Long、Date、Datetime、String、ID、または Booleanな�
     ```apex
     Long test1 = 10;
     Integer test2 = test1;
-    System.debug(tset2);
+    System.debug(test2);
     // 結果 ↓↓↓↓
     // Line: 2, Column: 9
     // Illegal assignment from Long to Integer
