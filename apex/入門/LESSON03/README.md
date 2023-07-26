@@ -22,7 +22,7 @@ Integer、Double、Long、Date、Datetime、String、ID、または Booleanな�
     ```apex
     Integer test1 = 10;
     Long test2 = test1;
-    System.debug(tset2);
+    System.debug(test);
     // 結果 ↓↓↓↓
     // 10
     ```
