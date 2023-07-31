@@ -7,7 +7,7 @@
  * 作成者　　　 : 草野
  */
 trigger trg_Account on Account (before update ,after insert) {
-	cntl_trg_Sample handler = new cntl_trg_Sample();
+　　　　　　　　cntl_trg_Sample handler = new cntl_trg_Sample();
     if(Trigger.isBefore){
         if(Trigger.isUpdate){
             handler.onBeforeUpdateProcess(Trigger.new);
