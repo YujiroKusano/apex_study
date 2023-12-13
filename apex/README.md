@@ -40,4 +40,5 @@ public class Main { // クラス名「Main」
     }
     ```
     ```実行結果
+    25
     ```
