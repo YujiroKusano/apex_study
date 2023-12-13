@@ -10,7 +10,7 @@ System.debug('Hello Apex Class');
 
 ## 解説
 ### メソッドの説明
-System.debug(msg);
+System.debug(<code style="color : Red">msg</code>);
 ```
 msgに文字列または数値を設定することでログ上に設定した値を出力することができる
 ```
