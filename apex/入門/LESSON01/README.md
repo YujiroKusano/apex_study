@@ -19,3 +19,12 @@ msgに文字列または数値を設定することでログ上に設定した�
 > 参考：[System クラス](https://developer.salesforce.com/docs/atlas.ja-jp.apexcode.meta/apexcode/apex_methods_system_system.htm#apex_System_System_debug)
 
 # 🎉🎉🎉Congratulations!🎉🎉🎉
+
+
+public Integer getMyAge() {
+    return 20;
+}
+
+public Integer getMyAge() {
+    return 10;
+}
