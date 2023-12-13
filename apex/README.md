@@ -30,15 +30,15 @@ public class Main { // クラス名「Main」
 ```
 3. 変数宣言
     1. 変数宣言の文
-    ```Main.java
+    ```java:Main.java
     public class Main {
         public void execute() {
-            int age;
-            age = 25;
-            System.debug(age);
+            int age;            // 変数宣言の文（「age」という箱を用意）
+            age = 25;           // 箱に数字を「25」を入れる
+            System.debug(age);  // 箱の中身を表示
         }
     }
     ```
-    ```実行結果
+    ```text:実行結果
     25
     ```
