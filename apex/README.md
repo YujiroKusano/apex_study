@@ -52,7 +52,7 @@ public class Main { // クラス名「Main」
             型 変数名
             ```
         - データ型一覧
-            - Integer、Double、Long、Date、Datetime、String、ID、または Booleanなどのよく使用する型（データ型）        
+            - Integer、Double、Long、Date、Datetime、String、ID、または Booleanなどのよく使用する型（データ型）
             | 型 | リテラル | 使用例 |　サイズ | 
             | --- | --- | --- | --- |
             | ID | ID型 | ```ID actId = ‘123456789012345678’;``` | 18文字(15文字を入れた場合自動で18に変換されます) |
