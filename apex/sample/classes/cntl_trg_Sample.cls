@@ -11,7 +11,7 @@ public without sharing class cntl_trg_Sample {
      * onBeforeUpdateProcess サンプル処理
      * @param trgAccount Trigger.New List
      */
-    public void onBeforeUpdateProcess( List<Account> trgAccount ){
+    public static void onBeforeUpdateProcess( List<Account> trgAccount ){
        // 処理
     }
 
@@ -19,7 +19,7 @@ public without sharing class cntl_trg_Sample {
      * onAfterInsertProcess サンプル処理
      * @param trgAccount Trigger.New List
      */
-    public void onAfterInsertProcess( List<Account> trgAccount ){
+    public static void onAfterInsertProcess( List<Account> trgAccount ){
         // 処理
     }
 }
