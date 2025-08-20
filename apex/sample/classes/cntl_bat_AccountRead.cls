@@ -22,7 +22,7 @@ public class cntl_bat_AccountRead implements Database.Batchable<sObject>, Databa
      * @param  scope startメソッド処理のクエリ結果
      */
     public void execute(Database.BatchableContext BC, 
-            List<Account> scope) {
+            List<SObject> scope) {
         system.debug('ヒープサイズ: ' + Limits.getHeapSize() + '/' + Limits.getLimitHeapSize());
         system.debug('データサイズ: ' + scope.size());
     }

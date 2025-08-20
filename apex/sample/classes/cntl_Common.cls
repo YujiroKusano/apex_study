@@ -49,17 +49,21 @@ public class Common {
      * @return 日付
      */
     public static Date stringToDate(String dateString) {
-        if (dateString == null) {
+        if (String.isBlank(dateString)) {
             return null;
         }
-        String newDateString = '';
-        // 年
-        newDateString += dateString.substring(0, 4) + '/';
-        // 月
-        newDateString += dateString.substring(4, 6) + '/';
-        // 日
-        newDateString += dateString.substring(6, 8);
-        return Date.parse(newDateString);
+        // Validate length and digits to avoid StringException and parse errors
+        if (dateString.length() != 8 || !dateString.replaceAll('[0-9]', '').isEmpty()) {
+            return null;
+        }
+        try {
+            String newDateString = dateString.substring(0, 4) + '/' +
+                                   dateString.substring(4, 6) + '/' +
+                                   dateString.substring(6, 8);
+            return Date.parse(newDateString);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     /**
