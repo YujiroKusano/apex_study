@@ -6,7 +6,7 @@
  * 作成日　　　 : 2021/09/01
  * 作成者　　　 : 草野
  */
-public without sharing class cntl_trg_Sample {
+public with sharing class cntl_trg_Sample {
     /**
      * onBeforeUpdateProcess サンプル処理
      * @param trgAccount Trigger.New List
